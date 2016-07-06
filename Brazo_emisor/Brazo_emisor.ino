@@ -1,6 +1,9 @@
+int sensor[5] = {A0, A1, A2, A3, A4};
+int cantidadsensores = 5;
 void setup() {
-  // put your setup code here, to run once:
-
+  for (int i = 0; i < cantidadsensores; i++) {
+    pinMode(sensor[i], INPUT);
+  }
 }
 
 void loop() {
